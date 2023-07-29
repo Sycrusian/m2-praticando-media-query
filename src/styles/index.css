@@ -1,0 +1,125 @@
+:root {
+    --color-dark: #212529;
+}
+
+body {
+    background-color: var(--color-dark);
+    font-family: 'Calibri', sans-serif;
+}
+
+.card {
+    color: var(--color-dark);
+    background-color: #ffffff;
+    margin: 100px auto;
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.colors__container {
+    display: flex;
+    gap: 10px;
+}
+
+.color__sample {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 50%;
+}
+
+.color-1 {
+    background-color: var(--color-dark);
+}
+
+.color-2 {
+    background-color: #0b7285;
+}
+
+.color-3 {
+    background-color: #364fc7;
+}
+
+.sizes__container {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.size__sample {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: #f1f3f5;
+    border-radius: 5px;
+}
+
+.prices__container {
+    display: flex;
+    gap: 20px;
+}
+
+.price__sample--discount {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.buttons__container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button {
+    height: 3rem;
+    width: 40%;
+    font-size: 1.2rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 10px;
+}
+
+.button__add {
+    color: #ffffff;
+    background-color: var(--color-dark);
+}
+
+@media (orientation:portrait) {
+    .card {
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+    .buttons__container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
